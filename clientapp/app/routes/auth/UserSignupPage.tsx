@@ -16,7 +16,7 @@ export default function SignupPageMain() {
     return (
         <div className="h-screen overflow-hidden select-none">
             <MacScrollbar className="w-full h-full" skin={theme === "dark" ? "dark" : "light"}>
-                <div className="min-h-screen flex flex-col p-6 md:p-10 lg:w-[50vw] w-screen">
+                <div className="min-h-screen flex flex-col p-6 md:p-10 w-screen">
                     <div className="flex gap-2 justify-between flex-shrink-0">
                         <div onClick={() => {
                             navigate(`/`)
@@ -40,15 +40,6 @@ export default function SignupPageMain() {
                             <RegisterForm />
                         </div>
                     </div>
-                </div>
-                <div className="absolute hidden bg-muted lg:block left-[50vw] top-0 w-[50vw] h-full pointer-events-none">
-                    <img
-                        src={clientConfig.DefaultBGImage}
-                        alt="Image"
-                        width={4000}
-                        height={2000}
-                        className="absolute inset-0 h-full w-full object-cover"
-                    />
                 </div>
             </MacScrollbar>
         </div>
