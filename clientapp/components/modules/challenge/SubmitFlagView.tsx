@@ -109,12 +109,12 @@ const SubmitFlagView = ({ curChallenge, gameID, setChallengeSolved, challengeSol
                             <div className="w-[50%] flex flex-col gap-6 p-10 h-[290px] bg-background/80 border-4 border-foreground/60 rounded-lg shadow-[0.5em_0.5em_0_0_#121212bb] dark:shadow-[0.5em_0.5em_0_0_#9a9a9abb]">
                                 <div className="flex gap-6 items-center">
                                     <Mail size={48} />
-                                    <span className="font-bold text-3xl">Submit your flag!</span>
+                                    <span className="font-bold text-3xl">提交你的FLAG</span>
                                 </div>
 
                                 <input
                                     className={`${borderRed ? "border-red-600 text-red-600" : ""} flex w-full bg-transparent px-3 shadow-sm transition-colors duration-300 placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 h-[50px] border-foreground rounded-lg border-4 text-xl font-bold py-0 focus-visible:border-blue-400 focus-visible:text-blue-400`}
-                                    placeholder="Enter your flag here"
+                                    placeholder="在这里输入你的FLAG"
                                     value={flag}
                                     onFocus={() => setBorderRed(false)}
                                     onChange={(e) => setFlag(e.target.value)}
@@ -128,7 +128,7 @@ const SubmitFlagView = ({ curChallenge, gameID, setChallengeSolved, challengeSol
                                     >
                                         <div className="flex gap-4 items-center">
                                             <X />
-                                            <span className="font-bold text-xl">Close</span>
+                                            <span className="font-bold text-xl">取消</span>
                                         </div>
                                     </Button>
                                     <Button className="h-[50px] rounded-lg transition-all duration-300 p-0 border-4 px-4 py-4 border-blue-400 text-blue-400 bg-background hover:border-blue-400 hover:text-blue-400 hover:bg-blue-400/10 [&_svg]:size-[32px]"
@@ -138,12 +138,12 @@ const SubmitFlagView = ({ curChallenge, gameID, setChallengeSolved, challengeSol
                                         {judgeing ? (
                                             <div className="flex gap-4 items-center">
                                                 <Loader2 className="animate-spin" />
-                                                <span className="font-bold text-xl">Judgeing</span>
+                                                <span className="font-bold text-xl">判定</span>
                                             </div>
                                         ) : (
                                             <div className="flex gap-4 items-center">
                                                 <SendHorizonal />
-                                                <span className="font-bold text-xl">Submit</span>
+                                                <span className="font-bold text-xl">提交</span>
                                             </div>
                                         )}
                                     </Button>

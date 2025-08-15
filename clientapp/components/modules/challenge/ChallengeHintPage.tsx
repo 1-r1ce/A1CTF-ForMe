@@ -71,7 +71,7 @@ export default function ChallengeHintPage(
                                 skin={theme == "light" ? "light" : "dark"}
                             >
                                 <div className="w-full p-10 pb-0 mb-8 flex items-center">
-                                    <span className="font-bold text-3xl">Hints</span>
+                                    <span className="font-bold text-3xl">提示</span>
                                     <div className="flex-1" />
                                     <Button className='w-[50px] h-[50px] [&_svg]:size-8 rounded-lg' variant="default"
                                         onClick={() => {
@@ -93,7 +93,7 @@ export default function ChallengeHintPage(
                                     </div>
                                 ) : (
                                     <div className="flex w-full h-full items-center justify-center">
-                                        <span className="font-bold text-3xl">No hints</span>
+                                        <span className="font-bold text-3xl">暂无提示</span>
                                     </div>
                                 )}
                             </MacScrollbar>
