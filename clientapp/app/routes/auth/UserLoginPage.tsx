@@ -16,7 +16,7 @@ export default function LoginPageMain() {
     return (
         <div className="h-screen overflow-hidden select-none">
             <MacScrollbar className="w-full h-full" skin={theme === "dark" ? "dark" : "light"}>
-                <div className="min-h-screen flex flex-col p-6 md:p-10] w-screen">
+                <div className="min-h-screen flex flex-col p-6 md:p-10 w-screen">
                     <div className="flex gap-2 justify-between flex-shrink-0">
                         <div onClick={() => {
                             navigate(`/`)
