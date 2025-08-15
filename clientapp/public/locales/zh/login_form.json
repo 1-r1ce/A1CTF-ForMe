@@ -10,7 +10,7 @@
     "email": "邮箱",
     "password": "密码",
     "forget_password": "忘记密码？",
-    "or_continue_with": "其他登录方式",
+    "or_continue_with": "已有账号？",
     "login_with_github": "使用Github登录",
     "login_with_zjnu": "浙江师范大学统一认证",
     "dont_have_account": "没有账号？",
