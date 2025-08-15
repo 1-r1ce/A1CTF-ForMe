@@ -36,7 +36,7 @@ export default function GameViewSidebar(
     const modules: Module[] = [
         {
             id: "info",
-            name: "比赛信息",
+            name: "比赛介绍",
             icon: <Info className="h-4 w-4" />,
         },
         {

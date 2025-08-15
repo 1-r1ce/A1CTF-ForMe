@@ -209,10 +209,10 @@ export function ScoreTable(
                 <div id="left-container" className="min-w-[300px] max-w-[18vw] flex-none overflow-hidden">
                     <div className="flex flex-col overflow-hidden">
                         <div className={`w-full border-b-2 h-12 border-t-2 transition-[border-color] duration-300 flex items-center justify-center`}>
-                            {/* <span className="font-bold">Username</span> */}
+                            {/* <span className="font-bold">队伍名</span> */}
                         </div>
                         <div className={`w-full border-b-2 h-12 transition-[border-color] duration-300 flex items-center justify-center`}>
-                            <span className="font-bold">Username</span>
+                            <span className="font-bold">队伍名</span>
                         </div>
                         {curPageData[0] && curPageData.map((item, index) => (
                             <div className={`w-full border-b-2 transition-[border-color] duration-300 h-12 flex items-center justify-center pl-6 pr-6`} key={`name-${index}`}>

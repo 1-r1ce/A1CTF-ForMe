@@ -201,7 +201,7 @@ export default function ChallengeMainContent(
                             onClick={() => { }}
                         >
                             <CheckCheck />
-                            <span className="font-bold text-xl">Solved!</span>
+                            <span className="font-bold text-xl">已解决</span>
                         </Button>
                     ) : (
                         <Button
@@ -209,7 +209,7 @@ export default function ChallengeMainContent(
                             onClick={() => setSubmitFlagWindowVisible(true)}
                         >
                             <Flag className="rotate-12" />
-                            <span className="font-bold text-xl">Submit!</span>
+                            <span className="font-bold text-xl">提交FLAG</span>
                         </Button>
                     ) : (<></>)
                     }
@@ -254,12 +254,12 @@ export default function ChallengeMainContent(
                                             {containerLaunching ? (
                                                 <>
                                                     <Loader2 className="animate-spin" />
-                                                    <span className="font-bold text-[1.125em]">Launching</span>
+                                                    <span className="font-bold text-[1.125em]">启动中</span>
                                                 </>
                                             ) : (
                                                 <>
                                                     <CirclePower />
-                                                    <span className="font-bold text-[1.125em]">Launch</span>
+                                                    <span className="font-bold text-[1.125em]">启动靶机</span>
                                                 </>
                                             )}
                                         </Button>
