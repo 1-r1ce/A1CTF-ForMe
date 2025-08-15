@@ -3,11 +3,7 @@ FROM node:22-alpine AS frontend-builder
 WORKDIR /app/clientapp
 
 # Install git for getting commit hash
-RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories \
-    && apk update \
-    && apk add --no-cache git
-# npm 换源
-RUN npm config set registry https://registry.npmmirror.com/
+RUN apk add --no-cache git
 
 COPY clientapp/package*.json ./
 RUN npm ci --only=production
@@ -29,9 +25,7 @@ FROM golang:1.24-alpine AS backend-builder
 
 WORKDIR /app
 
-RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories \
-    && apk update \
-    && apk add --no-cache git libwebp-dev build-base
+RUN apk add --no-cache git libwebp-dev build-base
 
 COPY go.mod go.sum ./
 
@@ -44,9 +38,7 @@ RUN CGO_ENABLED=1 GOMAXPROCS=0 GOOS=linux go build -ldflags="-s -w" -o app src/m
 
 FROM alpine:latest
 
-RUN sed -i 's|dl-cdn.alpinelinux.org|mirrors.aliyun.com|g' /etc/apk/repositories \
-    && apk update \
-    && apk --no-cache add ca-certificates tzdata libwebp-dev
+RUN apk --no-cache add ca-certificates tzdata libwebp-dev
 
 RUN addgroup -g 1001 -S appgroup && \
     adduser -u 1001 -S appuser -G appgroup
