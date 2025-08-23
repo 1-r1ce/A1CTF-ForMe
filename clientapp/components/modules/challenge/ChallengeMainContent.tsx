@@ -255,20 +255,12 @@ export default function ChallengeMainContent(
                                             {containerLaunching ? (
                                                 <>
                                                     <Loader2 className="animate-spin" />
-<<<<<<< HEAD
-                                                    <span className="font-bold text-[1.125em]">启动中</span>
-=======
                                                     <span className="font-bold text-[1.125em]">{t("launching")}</span>
->>>>>>> upstream/dev
                                                 </>
                                             ) : (
                                                 <>
                                                     <CirclePower />
-<<<<<<< HEAD
-                                                    <span className="font-bold text-[1.125em]">启动靶机</span>
-=======
                                                     <span className="font-bold text-[1.125em]">{t("launch")}</span>
->>>>>>> upstream/dev
                                                 </>
                                             )}
                                         </Button>
