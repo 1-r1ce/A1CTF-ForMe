@@ -32,13 +32,13 @@ const NoticeCard = memo(({
             case NoticeCategory.NewAnnouncement:
                 return (<Mdx source={notice.data[1]}></Mdx>)
             case NoticeCategory.NewHint:
-                return (<span>{`💡 题目 [${notice.data.join(", ")}] 新增了 Hint`}</span>)
+                return (<span>{`💡 ${t("challenge_name")} [${notice.data.join(", ")}] ${t("new_hint")}`}</span>)
             case NoticeCategory.FirstBlood:
                 return (<span>{`🥇 ${notice.data[0]} ${t("blood_message_p1")} ${notice.data[1]} ${t("blood1")}`}</span>)
             case NoticeCategory.SecondBlood:
-                return (<span>{`🥈 ${notice.data[0]} 获得了 ${notice.data[1]} ${t("blood2")}`}</span>)
+                return (<span>{`🥈 ${notice.data[0]} ${t("blood_message_p1")} ${notice.data[1]} ${t("blood2")}`}</span>)
             case NoticeCategory.ThirdBlood:
-                return (<span>{`🥉 ${notice.data[0]} 获得了 ${notice.data[1]} ${t("blood3")}`}</span>)
+                return (<span>{`🥉 ${notice.data[0]} ${t("blood_message_p1")} ${notice.data[1]} ${t("blood3")}`}</span>)
         }
     }, [notice.notice_category, notice.data, t]);
 
@@ -145,6 +145,7 @@ export function NoticesView({ opened, setOpened, notices }: { opened: boolean, s
     messages = notices
 
     const { theme } = useTheme();
+    const { t } = useTranslation("notices_view")
 
     // 消息卡片的可见列表
     const [visible, setVisible] = useState<boolean>(false)
@@ -292,7 +293,7 @@ export function NoticesView({ opened, setOpened, notices }: { opened: boolean, s
                             <div className="w-full flex flex-col items-center">
                                 <div className="container flex flex-col gap-4 items-center justify-center pb-10">
                                     <div className="w-full p-10 pb-0 mb-8 flex items-center">
-                                        <span className="font-bold text-3xl">公告</span>
+                                        <span className="font-bold text-3xl">{t("announcement")}</span>
                                         <div className="flex-1" />
                                         <Button className='w-[50px] h-[50px] [&_svg]:size-8 rounded-lg' variant="default"
                                             onClick={() => {
