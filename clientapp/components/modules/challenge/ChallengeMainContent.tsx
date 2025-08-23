@@ -202,11 +202,7 @@ export default function ChallengeMainContent(
                             onClick={() => { }}
                         >
                             <CheckCheck />
-<<<<<<< HEAD
-                            <span className="font-bold text-xl">已解决</span>
-=======
                             <span className="font-bold text-xl">{t("solved")}</span>
->>>>>>> upstream/dev
                         </Button>
                     ) : (
                         <Button
