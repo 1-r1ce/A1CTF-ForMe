@@ -6,7 +6,7 @@
     "download": "点击下载",
     "external_links": "外部链接",
     "live_container": "动态靶机",
-    "launch": "启动",
+    "launch": "启动靶机",
     "downloaded": "下载完成",
     "ready_redirect": "准备重定向到:",
     "check_security": "请注意检查链接是否安全合法",
@@ -32,7 +32,7 @@
     "login_first": "请先登录",
     "no_such_game": "比赛不存在",
     "launching": "启动中...",
-    "destory": "销毁",
+    "destory": "销毁靶机",
     "copied": "靶机信息已复制",
     "fail_copy": "复制到剪贴板失败",
     "container_start_success": "靶机开启成功",
@@ -49,5 +49,5 @@
     "submit_flag_placeholder": "请输入正确的Flag",
     "submit_flag_close": "关闭",
     "submit_flag_check": "提交",
-    "submit_flag_judge": "校验中"
+    "submit_flag_judge": "校验"
 }
