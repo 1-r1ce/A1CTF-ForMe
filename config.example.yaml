@@ -95,4 +95,4 @@ cap-settings:
   defaultHttpHandleLimitBurst: 50
 
 game-settings:
-  container-cooldown-time: 60s
+  container-cooldown-time: 10s
