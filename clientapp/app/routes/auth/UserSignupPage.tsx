@@ -27,7 +27,7 @@ export default function SignupPageMain() {
                                 width={40}
                                 height={40}
                             />
-                            <span className="font-bold text-lg">{clientConfig.systemName} SSO</span>
+                            <span className="font-bold text-lg">{clientConfig.systemName}</span>
                         </div>
                         <ThemeSwitcher>
                             <Button variant="outline" size="icon">
