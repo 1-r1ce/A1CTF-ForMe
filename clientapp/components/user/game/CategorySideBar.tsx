@@ -294,14 +294,7 @@ export function CategorySidebar({
                         <SidebarGroup className="h-full">
                             <div className="flex justify-center w-full items-center pl-2 pr-2 pt-6 mb-4">
                                 <div className="justify-start flex gap-4 items-center">
-                                    <img
-                                        className="transition-all duration-300"
-                                        src={getSystemLogoDefault()}
-                                        alt={clientConfig.SVGAltData}
-                                        width={40}
-                                        height={40}
-                                    />
-                                    <span className="font-bold text-xl transition-colors duration-300">{clientConfig.systemName} Platform</span>
+                                    <span className="font-bold text-xl transition-colors duration-300">题目列表</span>
                                 </div>
                                 <div className="flex-1" />
                             </div>
