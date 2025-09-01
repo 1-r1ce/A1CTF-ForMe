@@ -110,20 +110,19 @@ const ChallengesViewHeader = (
                                 <TooltipContent className="select-none">
                                     <div className="flex flex-col gap-[4px]">
                                         <div className="flex items-center gap-[6px]">
-                                            <Bath className="w-4 h-4" />
-                                            <span className="font-bold">A1 Notice Service</span>
+                                            <span className="font-bold">平台连接状态</span>
                                         </div>
                                         <div className="flex items-center w-full justify-center">
                                             {
                                                 wsStatus == "connecting" ? (
                                                     <div className="flex gap-[4px] items-center text-yellow-500">
                                                         <Loader2 className="animate-spin w-4 h-4" />
-                                                        <p>Connecting</p>
+                                                        <p>连接中</p>
                                                     </div>
                                                 ) : wsStatus == "connected" ? (
-                                                    <p className="text-green-500">Connected</p>
+                                                    <p className="text-green-500">已连接</p>
                                                 ) : (
-                                                    <p className="text-red-300">Disconnected</p>
+                                                    <p className="text-red-300">未连接</p>
                                                 )
                                             }
                                         </div>
