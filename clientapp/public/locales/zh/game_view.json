@@ -31,7 +31,7 @@
     "loading": "加载中...",
     "scoreboard": {
         "title": "排行榜",
-        "participant": "参赛队伍",
+        "participant": "队伍名",
         "data_error": "数据不完整",
         "png_error": "保存图表失败",
         "filename": "积分榜",
